@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		50942CF72BC1B24100361A97 /* BrainlyPrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */; };
-		50942CF92BC1B24100361A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942CF82BC1B24100361A97 /* ContentView.swift */; };
-		50942CFB2BC1B24100361A97 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942CFA2BC1B24100361A97 /* Item.swift */; };
 		50942CFD2BC1B24400361A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50942CFC2BC1B24400361A97 /* Assets.xcassets */; };
 		50942D012BC1B24400361A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50942D002BC1B24400361A97 /* Preview Assets.xcassets */; };
 		50942D0B2BC1B24500361A97 /* BrainlyPrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942D0A2BC1B24500361A97 /* BrainlyPrepTests.swift */; };
@@ -18,6 +16,7 @@
 		50942D262BC1B38F00361A97 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942D252BC1B38F00361A97 /* APIService.swift */; };
 		50942D292BC1B3D500361A97 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942D282BC1B3D500361A97 /* TodoModel.swift */; };
 		50942D2F2BC1B9C400361A97 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942D2E2BC1B9C400361A97 /* TodoViewModel.swift */; };
+		50942D332BC1FB9D00361A97 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942D322BC1FB9D00361A97 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +39,6 @@
 /* Begin PBXFileReference section */
 		50942CF32BC1B24100361A97 /* BrainlyPrep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainlyPrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlyPrepApp.swift; sourceTree = "<group>"; };
-		50942CF82BC1B24100361A97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		50942CFA2BC1B24100361A97 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		50942CFC2BC1B24400361A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50942CFE2BC1B24400361A97 /* BrainlyPrep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrainlyPrep.entitlements; sourceTree = "<group>"; };
 		50942D002BC1B24400361A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,6 +50,7 @@
 		50942D252BC1B38F00361A97 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		50942D282BC1B3D500361A97 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		50942D2E2BC1B9C400361A97 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		50942D322BC1FB9D00361A97 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +101,11 @@
 		50942CF52BC1B24100361A97 /* BrainlyPrep */ = {
 			isa = PBXGroup;
 			children = (
+				50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */,
+				50942D302BC1FB7D00361A97 /* Views */,
 				50942D2D2BC1B80B00361A97 /* ViewModels */,
 				50942D272BC1B39F00361A97 /* Models */,
 				50942D232BC1B31C00361A97 /* Services */,
-				50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */,
-				50942CF82BC1B24100361A97 /* ContentView.swift */,
-				50942CFA2BC1B24100361A97 /* Item.swift */,
 				50942CFC2BC1B24400361A97 /* Assets.xcassets */,
 				50942CFE2BC1B24400361A97 /* BrainlyPrep.entitlements */,
 				50942CFF2BC1B24400361A97 /* Preview Content */,
@@ -171,6 +168,22 @@
 				50942D2E2BC1B9C400361A97 /* TodoViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		50942D302BC1FB7D00361A97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50942D312BC1FB8A00361A97 /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50942D312BC1FB8A00361A97 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				50942D322BC1FB9D00361A97 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50942D2F2BC1B9C400361A97 /* TodoViewModel.swift in Sources */,
-				50942CF92BC1B24100361A97 /* ContentView.swift in Sources */,
-				50942CFB2BC1B24100361A97 /* Item.swift in Sources */,
 				50942D262BC1B38F00361A97 /* APIService.swift in Sources */,
 				50942D292BC1B3D500361A97 /* TodoModel.swift in Sources */,
+				50942D332BC1FB9D00361A97 /* MainView.swift in Sources */,
 				50942CF72BC1B24100361A97 /* BrainlyPrepApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
