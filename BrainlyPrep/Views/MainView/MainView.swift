@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var viewModel = TodoViewModel()
     
     var body: some View {
         NavigationView {
-            List(viewModel.todos, id: \.id) { todo in
-                Text(todo.title)
-            }
-            .onAppear {
-                viewModel.fetchTodos()
-            }
-            .navigationTitle("Todos")
+//            List(viewModel.pokemons) { pokemon in
+//                Text(pokemon)
+//            }
+//            .onAppear {
+//                $viewModel.fetchPokemonList
+//            }
+//            .navigationTitle("Pokèmons")
         }
     }
 }
