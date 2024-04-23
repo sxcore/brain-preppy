@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
-    
+    @StateObject var viewModel = UsersViewModel(userService: UsersService()) //TODO: Dependency Injection could happen here
+
     var body: some View {
         NavigationView {
-//            List(viewModel.pokemons) { pokemon in
-//                Text(pokemon)
-//            }
-//            .onAppear {
-//                $viewModel.fetchPokemonList
-//            }
-//            .navigationTitle("Pokèmons")
+            List(viewModel.users) { user in
+                Text(user.login)
+            }
+            .onAppear {
+                viewModel.fetchUsers()
+            }
+            .navigationTitle("GH Users")
         }
     }
 }

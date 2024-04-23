@@ -13,6 +13,7 @@
 		506C3E612BD72FDD003C781C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C3E602BD72FDD003C781C /* UserService.swift */; };
 		506C3E632BD73CC9003C781C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C3E622BD73CC9003C781C /* UserModel.swift */; };
 		506C3E652BD73D24003C781C /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C3E642BD73D24003C781C /* UserDetailsModel.swift */; };
+		506C3E672BD73FCE003C781C /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C3E662BD73FCE003C781C /* UsersViewModel.swift */; };
 		50942CF72BC1B24100361A97 /* BrainlyPrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */; };
 		50942CFD2BC1B24400361A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50942CFC2BC1B24400361A97 /* Assets.xcassets */; };
 		50942D012BC1B24400361A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50942D002BC1B24400361A97 /* Preview Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		506C3E602BD72FDD003C781C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		506C3E622BD73CC9003C781C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		506C3E642BD73D24003C781C /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
+		506C3E662BD73FCE003C781C /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		50942CF32BC1B24100361A97 /* BrainlyPrep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainlyPrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50942CF62BC1B24100361A97 /* BrainlyPrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainlyPrepApp.swift; sourceTree = "<group>"; };
 		50942CFC2BC1B24400361A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		50942D2D2BC1B80B00361A97 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				506C3E662BD73FCE003C781C /* UsersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				506C3E612BD72FDD003C781C /* UserService.swift in Sources */,
 				506C3E5A2BD6F573003C781C /* APIEndpoint.swift in Sources */,
 				506C3E5F2BD728F9003C781C /* APIClient.swift in Sources */,
+				506C3E672BD73FCE003C781C /* UsersViewModel.swift in Sources */,
 				50942CF72BC1B24100361A97 /* BrainlyPrepApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

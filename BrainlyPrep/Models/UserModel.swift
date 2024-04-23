@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserModel: Decodable {
+struct UserModel: Decodable, Identifiable {
     let login: String
     let id: Int
     let avatar_url: String

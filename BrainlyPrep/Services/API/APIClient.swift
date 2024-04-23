@@ -22,7 +22,7 @@ class ClientURLSession<Endpoint: APIEndpoint>: APIClient {
         endpoint.headers?.forEach { request.addValue($0.value, forHTTPHeaderField: $0.key) }
 
         return URLSession.shared.dataTaskPublisher(for: request)
-            .subscribe(on: DispatchQueue.global( qos: .background))
+            .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response -> Data in
                 guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
                     throw APIError.invalidResponse
