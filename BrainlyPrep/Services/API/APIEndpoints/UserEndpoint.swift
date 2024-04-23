@@ -28,7 +28,7 @@ enum UserEndpoint: APIEndpoint {
         switch self {
         case .getUsers:
             return .get
-        case .getUser(username: let username):
+        case .getUser(username: _):
             return .get
         }
     }
@@ -37,7 +37,7 @@ enum UserEndpoint: APIEndpoint {
         switch self {
         case .getUsers:
             return nil
-        case .getUser(username: let username):
+        case .getUser(username: _):
             return nil
         }
     }
@@ -46,7 +46,7 @@ enum UserEndpoint: APIEndpoint {
         switch self {
         case .getUsers:
             return nil
-        case .getUser(username: let username):
+        case .getUser(username: _):
             return nil
         }
     }

@@ -19,4 +19,5 @@ class UsersService: UserServiceProtocol {
     func getUsers() -> AnyPublisher<[UserModel], Error> {
         return apiClient.request(.getUsers)
     }
+
 }

@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct UserDetailsModel: Codable {
-    
-}
+struct UserDetailsModel: Codable {}

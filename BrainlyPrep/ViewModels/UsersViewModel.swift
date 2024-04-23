@@ -28,7 +28,6 @@ class UsersViewModel: ObservableObject {
             }, receiveValue: {[weak self] data in
                 self?.users = data
             }).store(in: &cancellables)
-
     }
 
 }
